@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icons/sunflower.ico">
+  <title>Portfolio | Random</title>
 
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/aos.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-  <header class="header">
+  <header class="header" id="header">
     <nav class="navbar navbar-expand-lg fixed-top set-background-white">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -32,6 +33,9 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -40,28 +44,31 @@
     </nav>
   </header>
 
-  <section id="home" class="home">
+  <section class="home" id="home">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5" data-aos="fade-down" data-aos-delay="200">
-          <img src="./assets/images/Ryo Yamada.jpg" class="img-fluid pe-4">
+          <img src="./assets/images/Ryo Yamada.jpg" class="img-fluid p-4">
         </div>
         <div class="col-lg-7">
-          <p class="display-3 fw-bold mb-4 text-animation" data-aos="fade-up" data-aos-delay="200">Hello, I'm a
+          <h5 class="fw-bold text-muted" data-aos="fade-up" data-aos-delay="200">Hello, Jia En here
+          </h5>
+          <p class="display-4 fw-bold mb-4 text-animation" data-aos="fade-up" data-aos-delay="300">I'm a
             <span></span>
           </p>
-          <p class="text-muted mb-4" data-aos="fade-up" data-aos-delay="300">Experienced Web Developer with 1.5+
+          <p class="text-muted mb-4" data-aos="fade-up" data-aos-delay="400">An experienced Web Developer with 1.5+
             years of
             experience in developing web application. Proficient
             in modern programming languages and frameworks, with a background in full-stack development.
             Capable to work with cross-functional teams to deliver high-quality software solutions.
           </p>
-          <div class="d-flex justify-content-between" data-aos="fade-up" data-aos-delay="400">
-            <button type="button">Downlaod Resume</button>
-            <div class="me-5">
-              <a href="#" class="fw-bold" data-aos="fade-up" data-aos-delay="400"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="#" data-aos="fade-up" data-aos-delay="400"><i class="fa-brands fa-linkedin-in"></i></a>
+          <div class="d-flex justify-content-between" data-aos="fade-up" data-aos-delay="500">
+            <a href="./assets/documents/Khor_Jia_En_Resume.pdf" target=”_blank”>
+              <button type="button">Download Resume</button>
+            </a>
+            <div class="media-item">
+              <a href="https://github.com/jiaen0720" target=”_blank”><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/khor-jia-en-49b602313/" target=”_blank”><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
@@ -69,11 +76,13 @@
     </div>
   </section>
 
+  <hr>
+
   <section id="about" class="about">
     <p class="display-4 fw-bold text-center mb-5" data-aos="fade-down" data-aos-delay="200">About <span
         class="set-color-purple">Me</span></p>
-    <div class="container" data-aos="fade-down" data-aos-delay="200">
-      <div class="row">
+    <div class="container">
+      <div class="row ps-5 mb-5" data-aos="fade-down" data-aos-delay="300">
         <div class="col-lg-6 ps-5">
           <h5 class="fw-bold mb-4 set-color-purple">Experienced</h5>
           <ul class="timeline">
@@ -105,129 +114,117 @@
           </ul>
         </div>
       </div>
+      <div class="row ps-5" data-aos="fade-down" data-aos-delay="400">
+        <div class="col-lg-12 ps-5">
+          <h5 class="fw-bold mb-4 set-color-purple">Project</h5>
+          <ul class="timeline">
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold">Label Generation System</h5>
+              <p class="text-muted">A system that collects form inputs to generate PDF labels based on selected
+                templates.</p>
+            </li>
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold">Scheduling System</h5>
+              <p class="text-muted">A reservation system with drag-and-drop editing and quick slot search features.</p>
+            </li>
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold">Film SEM</h5>
+              <p class="text-muted">A system that searches and compares results matching user input to reduce manual
+                work.</p>
+            </li>
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold">API Portal</h5>
+              <p class="text-muted">A subscription-based API service system where subscribers obtain API keys via the
+                app or email.</p>
+            </li>
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold"> Inventory Management Information System</h5>
+              <p class="text-muted">A system that manage inventory data and generating reports.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
+  <hr>
 
-  <!-- <section id="education" class="education">
-    <p class="display-4 fw-bold text-center mb-4" data-aos="fade-down" data-aos-delay="200">Education<span
-        class="set-color-purple"></span></p>
-    <div class="container">
-      <div class="row">
-
-        <div class="timeline-item">
-          <div class="timeline-item">
-            <div class="timeline-date">
-              2021
-            </div>
-            <div class="timeline-content">
-              <h3>
-                PSDC
-              </h3>
-              <p>
-                Paragraph...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-item">
-            <div class="timeline-date">
-              2021
-            </div>
-            <div class="timeline-content">
-              <h3>
-                PSDC
-              </h3>
-              <p>
-                Paragraph...
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section id="about" class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <p class="display-3 fw-bold mb-4 text-animation" data-aos="fade-up" data-aos-delay="200">About Me</p>
-          <div class="d-flex flex-column">
-            <button type="button" class="btn btn-primary">Experienced</button>
-            <button type="button" class="btn btn-primary">Project</button>
-            <button type="button" class="btn btn-primary">Education</button>
-            <button type="button" class="btn btn-primary">Skills</button>
-          </div>  
-        </div>
-        <div class="col-lg-8">
-          <div class="card">
-            <p class="card-text">Experienced Web Developer with 1.5+
-              years of
-              experience in developing web application. Proficient
-              in modern programming languages and frameworks, with a background in full-stack development.
-              Capable to work with cross-functional teams to deliver high-quality software solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section id="skills" class="skills">
+  <section class="skills" id="skills">
     <p class="display-4 fw-bold text-center mb-5 set-color-purple" data-aos="fade-down" data-aos-delay="200">Skills
     </p>
     <div class="container" data-aos="fade-down" data-aos-delay="300">
       <div class="row">
         <div class="col-lg-4">
-          <div class="card m-1 shadow-sm set-rounded">
+          <div class="card m-2 shadow-sm set-rounded">
             <div class="card-body">
               <h5 class="card-title text-center">Languages</h5>
-              <hr>
-              <div class="card-text">
-                <div class="d-flex">
-                  <ul class="me-5">
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>JavaScript</li>
-                  </ul>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
+              <hr class="mb-4">
+              <div class="text-muted">
+                <h6>C++</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>C#</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>JavaScript, HTML & CSS</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card m-1 shadow-sm set-rounded">
+          <div class="card m-2 shadow-sm set-rounded">
             <div class="card-body">
               <h5 class="card-title text-center">Database</h5>
-              <hr>
-              <div class="card-text">
-                <ul>
-                  <li>MSSQL</li>
-                  <li>PL/SQL</li>
-                  <li>MySQL</li>
-                </ul>
+              <hr class="mb-4">
+              <div class="text-muted">
+                <h6>MSSQL</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>PL/SQL</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>MySQL</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card m-1 shadow-sm set-rounded">
+          <div class="card m-2 shadow-sm set-rounded">
             <div class="card-body">
               <h5 class="card-title text-center">Framework</h5>
-              <hr>
-              <div class="card-text">
-                <ul>
-                  <li>ASP.Net Core</li>
-                  <li>ASP.Net MVC</li>
-                  <li>bootstrap</li>
-                </ul>
+              <hr class="mb-4">
+              <div class="text-muted">
+                <h6>ASP.Net Core</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>ASP.Net MVC</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>Bootstrap</h6>
+                <div class="progress mb-4">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -237,17 +234,20 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <p class="display-4 fw-bold text-center mb-5" data-aos="fade-down" data-aos-delay="200">Contact <span
+  <hr>
+
+  <section class="contact" id="contact">
+    <p class="display-4 fw-bold text-center" data-aos="fade-down" data-aos-delay="200">Contact <span
         class="set-color-purple">Me</span></p>
-    <div class="container" data-aos="fade-down" data-aos-delay="300">
+    <p class="text-center mb-5" data-aos="fade-down" data-aos-delay="300">Have any Question? Contact me now</p>
+    <div class="container" data-aos="fade-down" data-aos-delay="400">
       <div class="row">
         <div class="d-flex justify-content-center">
           <div class="card m-1 shadow-sm set-rounded">
             <div class="card-body">
               <div class="d-flex flex-row">
-                <span class="card-text p-4"><i class="fa-solid fa-envelope"></i> example@gmail.com</span>
-                <span class="card-text p-4"><i class="fa-solid fa-phone"></i> +60 1156975520</span>
+                <span class="card-text p-4"><i class="fa-solid fa-envelope set-color-purple"></i>
+                  &nbsp;jiaen.khor@1utar.my</span>
               </div>
             </div>
           </div>
@@ -256,7 +256,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="py-4 text-white set-background-purple">
       <div class="container">
         <div class="row text-center">

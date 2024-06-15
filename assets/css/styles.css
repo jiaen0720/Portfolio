@@ -3,6 +3,7 @@
 :root {
     --font-base: "Poppins";
     --color-purple: #7d2ae8;
+    --color-yellow: #ffc107;
     --color-white: #fefefe;
     --color-black: #000000;
 }
@@ -23,8 +24,8 @@ body {
 }
 
 section {
-    padding-top: 120px;
-    padding-bottom: 170px;
+    padding-top: 70px;
+    padding-bottom: 130px;
 }
 
 .set-color-purple {
@@ -71,8 +72,17 @@ section {
 .navbar .navbar-nav .nav-item a:hover,
 .navbar .navbar-nav .nav-item a.active {
     color: var(--color-purple);
-    border-bottom: 3px solid var(--color-purple);
     transition: 0.3s ease;
+}
+
+@media (min-width: 992px) {
+
+    .navbar .navbar-nav .nav-item a:hover,
+    .navbar .navbar-nav .nav-item a.active {
+        color: var(--color-purple);
+        border-bottom: 3px solid var(--color-purple);
+        transition: 0.3s ease;
+    }
 }
 
 .home img {
@@ -80,14 +90,6 @@ section {
 }
 
 .home button {
-    /* color: var(--color-purple);
-    background-color: var(--color-white);
-    padding: 10px 30px;
-    margin-right: 4px;
-    border-radius: 25px;
-    border: 3px solid var(--color-purple);
-    transition: 0.3s ease; */
-
     color: var(--color-white);
     background-color: var(--color-purple);
     padding: 10px 30px;
@@ -98,37 +100,22 @@ section {
 }
 
 .home button:hover {
-    /* color: var(--color-white);
-    background-color: var(--color-purple);
-    border: 3px solid transparent; */
-
     color: var(--color-purple);
     background-color: var(--color-white);
     border: 3px solid var(--color-purple);
 }
 
-.home a {
-    /* color: var(--color-white);
-    background-color: var(--color-purple);
-    padding: 10px 14px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    transition: 0.3s ease; */
-
+.home .media-item a {
     font-size: 28px;
     color: var(--color-purple);
     background-color: var(--color-white);
     padding: 2px 9px;
-    border-radius: 50px;
+    border-radius: 50%;
     border: 3px solid var(--color-purple);
     transition: 0.3s ease;
 }
 
-.home a:hover {
-    /* color: var(--color-purple);
-    background-color: var(--color-white);
-    border: 3px solid var(--color-purple); */
-
+.home .media-item a:hover {
     color: var(--color-white);
     background-color: var(--color-purple);
     border: 3px solid transparent;
@@ -168,30 +155,29 @@ section {
 }
 
 @keyframes words {
-
     0%,
     20% {
         content: "Web Developer";
     }
-
+    
     21%,
     40% {
-        content: "Web Designer";
-    }
-
-    41%,
-    60% {
-        content: "Analyst Programmer";
-    }
-
-    61%,
-    80% {
         content: "Software Engineer";
     }
-
+    
+    41%,
+    60% {
+        content: "Web Designer";
+    }
+    
+    61%,
+    80% {
+        content: "Web Developer";
+    }
+    
     81%,
     100% {
-        content: "Computer Science Student";
+        content: "Analyst Programmer";
     }
 }
 
@@ -224,7 +210,7 @@ section {
 }
 
 .timeline {
-    border-left: 1px solid hsl(0, 0%, 90%);
+    border-left: 1px solid var(--color-purple);
     position: relative;
     list-style: none;
 }
@@ -240,10 +226,18 @@ section {
 }
 
 .timeline .timeline-item:after {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--color-purple);
     left: -38px;
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
+}
+
+.skills .progress {
+    height: 12px;
+}
+
+.skills .progress .progress-bar {
+    background-color: var(--color-yellow);
 }
