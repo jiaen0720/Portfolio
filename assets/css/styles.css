@@ -24,8 +24,15 @@ body {
 }
 
 section {
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+@media (min-width: 992px) {
+    section {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
 }
 
 .set-color-purple {
@@ -162,22 +169,22 @@ section {
     
     21%,
     40% {
-        content: "Software Engineer";
+        content: "Web Designer";
     }
     
     41%,
     60% {
-        content: "Web Designer";
+        content: "Web Developer";
     }
     
     61%,
     80% {
-        content: "Web Developer";
+        content: "Web Designer";
     }
     
     81%,
     100% {
-        content: "Analyst Programmer";
+        content: "Web Developer";
     }
 }
 
